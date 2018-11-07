@@ -1,0 +1,126 @@
+body{
+	background: white;
+	color: white;
+	background-image: url(../images/backgroundImage.jpg)
+
+}
+
+
+div{
+	background: white;
+	margin: 25px;
+	background: transparent;
+}
+
+h2{
+	margin-left: auto;
+	position: relative;
+	left: 480px;
+}
+
+.fadingSlide{
+	display: none;
+}
+
+
+.grid-Container{
+	display: grid;
+	grid-template-columns: 500px 500px;
+	grid-template-rows: 500px auto;
+	justify-content: center;
+	align-content: center;
+	margin-left: 30px;
+}
+
+.mainImage{
+	width: 500px;
+	height: 500px;
+}
+
+.topRight{
+	width: 500px;
+	height: 200px;
+}
+
+.smallSquare{
+	height: 200px;
+	width: 200px;
+	position: relative;
+	bottom: 300px;
+	left: 500px;
+}
+
+.nextToSquare{
+
+	position: relative;
+	bottom: 300px;
+	left: 200px;
+	width: 300px;
+	height: 200px;
+}
+
+.bottomRight{
+	height: 100px;
+	width: 500px;
+	position: relative;
+	bottom: 300px;
+	left: 500px;
+
+}
+
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  margin-top: -70px;
+  padding: 50px;
+  color: white;
+  font-weight: bold;
+  font-size: 30px;
+  transition: 1s ease;
+}
+
+
+
+.next {
+ 	right: 0%;
+}
+
+.prev{
+}
+
+
+.dots{
+	text-align: center;
+}
+
+.prev:hover, .next:hover {
+ 	background-color: rgba(0,0,0,0.9);
+ }
+
+ .dot {
+	cursor: pointer;
+	height: 15px;
+	width: 15px;
+	margin: 2px;
+	background-color: #bbb;
+	display: inline-block;
+	position: relative;
+	bottom: 300px;
+	transition: 1s ease;
+}
+
+.active, .dot:hover {
+	background-color: #717171;
+}
+
+.fade{
+	animation-name: fade;
+	animation-duration: 1s;
+}
+
+@keyframes fade{
+	from {opacity: 0.2}
+	to{opacity: 1}	
+}
